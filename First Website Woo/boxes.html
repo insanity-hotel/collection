@@ -1,0 +1,628 @@
+<!doctype html>
+<html>
+<head>
+<title> boxes </title>
+
+<link rel="shortcut icon" href="tetris.jpg">
+
+<style>
+
+#intro {
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+  background-color: black;
+  font-size: 30.5px;
+  color: white;
+  font-family: monospace;
+  text-align: left;
+  top: 0px;
+}
+
+#intro2 {
+  position: absolute;
+  top: 1590px;
+  left: 0px;
+  background-color: darkblue;
+  color: white;
+  font-family: Arial;
+  font-size: 40px;
+}
+
+#squares {
+  position: absolute;
+  left: 486px;
+  top: 200px;
+  color: white;
+  background-color: black;
+  font-family: Arial;
+  line-height: 1.3;
+}
+
+#tetris {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 200px;
+  width: 200px;
+}
+
+#tetris2 {
+  position: absolute;
+  right: 200px;
+  top: 0px;
+  height: 200px;
+  width: 200px;
+}
+
+#tetris3 {
+  position: absolute;
+  right: 400px;
+  top: 0px;
+  height: 200px;
+  width: 200px;
+}
+
+#tetris4 {
+  position: absolute;
+  right: 600px;
+  top: 0px;
+  height: 200px;
+  width: 200px;
+}
+
+#tetris5 {
+  position: absolute;
+  right: 800px;
+  top: 0px;
+  height: 200px;
+  width: 200px;
+}
+
+#tetris6 {
+  position: absolute;
+  right: 1000px;
+  top: 0px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris7 {
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris8 {
+  position: absolute;
+  right: 0px;
+  top: 400px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris9 {
+  position: absolute;
+  right: 0px;
+  top: 600px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris10 {
+  position: absolute;
+  right: 0px;
+  top: 800px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris11 {
+  position: absolute;
+  right: 0px;
+  top: 1000px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris12 {
+  position: absolute;
+  right: 0px;
+  top: 1200px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris13 {
+  position: absolute;
+  right: 0px;
+  top: 1400px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris14 {
+  position: absolute;
+  right: 0px;
+  top: 1600px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris15 {
+  position: absolute;
+  right: 0px;
+  top: 1800px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris16 {
+  position: absolute;
+  right: 0px;
+  top: 2000px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris17 {
+  position: absolute;
+  right: 0px;
+  top: 2200px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris18 {
+  position: absolute;
+  right: 0px;
+  top: 2400px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris19 {
+  position: absolute;
+  right: 0px;
+  top: 2600px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#tetris20 {
+  position: absolute;
+  right: 0px;
+  top: 2800px;
+  height: 200px;
+  width: 200px;
+  z-index: -2;
+}
+
+#square {
+  background-color: white;
+}
+
+#inrainbows {
+  position: absolute;
+  left: 969px;
+  top: 200px;
+  width: 350px;
+  height: 350px;
+}
+
+#darkside {
+  position: absolute;
+  left: 969px;
+  top: 550px;
+  width: 350px;
+  height: 350px;
+}
+
+#volta {
+  position: absolute;
+  left: 969px;
+  top: 900px;
+  width: 350px;
+  height: 350px;
+}
+
+#HTTT {
+  position: absolute;
+  left: 969px;
+  top: 1250px;
+  width: 350px;
+  height: 350px;
+}
+
+#amnesiac {
+  position: absolute;
+  left: 969px;
+  top: 1600px;
+  width: 350px;
+  height: 350px;
+}
+
+#voltaic {
+  position: absolute;
+  left: 969px;
+  top: 1950px;
+  width: 350px;
+  height: 350px;
+}
+
+#future {
+  position: absolute;
+  left: 969px;
+  top: 2300px;
+  width: 350px;
+  height: 350px;
+}
+
+#skeletontree {
+  position: absolute;
+  left: 969px;
+  top: 2650px;
+  width: 350px;
+  height: 350px;
+}
+
+#keyboard {
+  position: absolute;
+  right: 550px;
+  top: 2755px;
+  height: 246px;
+}
+
+#tetris21 {
+  position: absolute;
+  top: 1570px;
+  width: 200px;
+  height: 200px;
+  left: 340px;
+  z-index: -2;
+}
+
+#tetris22 {
+  position: absolute;
+  top: 1770px;
+  width: 200px;
+  height: 200px;
+  left: 340px;
+  z-index: -1;
+}
+#tetris23 {
+  position: absolute;
+  top: 1970px;
+  width: 200px;
+  height: 200px;
+  left: 340px;
+  z-index: -1;
+}
+#tetris24 {
+  position: absolute;
+  top: 2170px;
+  width: 200px;
+  height: 200px;
+  left: 340px;
+  z-index: -1;
+}
+#tetris25 {
+  position: absolute;
+  top: 2370px;
+  width: 200px;
+  height: 200px;
+  left: 340px;
+  z-index: -1;
+}
+#tetris26 {
+  position: absolute;
+  top: 2570px;
+  width: 200px;
+  height: 200px;
+  left: 340px;
+  z-index: -1;
+}
+#tetris27 {
+  position: absolute;
+  top: 2770px;
+  width: 200px;
+  height: 200px;
+  left: 340px;
+  z-index: -1;
+}
+
+#tetris28 {
+  position: absolute;
+  top: 2800px;
+  width: 200px;
+  height: 200px;
+  left: 0px;
+  z-index: -1;
+}
+
+#INTP {
+  color: white;
+}
+
+#collections {
+  color: white;
+}
+
+#tetriss {
+  color: white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <div id=intro>
+
+
+
+    Today in Critical Theory, <br>
+    I learned never to think <br>
+    in oppositions, <br>
+    in dualities.<br>
+    I felt gratified, because<br>
+    I try to recognize nuance.<br>
+    Or at least, that is what I <br>
+    tell myself.<br>
+    I asked the professor <br>
+    what psychoanalysis had to do <br>
+    with critical race theory.<br>
+    I don't know if I <br>
+    actually wanted to know <br>
+    the answer or if I wanted <br>
+    to seem smart.
+    She told the <br>
+    guy next to me <br>
+    to put away his phone. <br>
+    I was filled with <br>
+    secondhand embarrassment.<br>
+    I also wanted the professor <br>
+    to talk about what <br>
+    Deleuze and Guattari <br>
+    thought of Marx, since <br>
+    neither of them believe <br>
+    in root causes. <br>
+    I know Marx wrote about <br>
+    class struggle, but did he<br>
+    see it as a root cause? <br>
+    I don't know.<br>
+    I do know he claimed <br>
+    not to believe <br>
+    in dogma.<br>
+    Which I find a bit<br>
+    tragically ironic.<br>
+    It is hard to separate<br>
+    a true belief from<br>
+    something said <br>
+    "for the sake of argument."<br>
+    Sometimes I think <br>
+    there is no difference. <br>
+    Anything that is said <br>
+    takes on a little more <br>
+    meaning in the sayer's <br>
+    subconsciousness.<br>
+
+
+
+  </div>
+
+  <div id=intro2>
+
+    I really like <br>
+    putting myself <br>
+    into boxes <br>
+    because they are<br>
+    comforting.<br>
+    I have been <br>
+    through<br>
+    many phases.<br>
+    I do not think <br>
+    they will ever <br>
+    stop because<br>
+    I am very <br>
+    obsessive.<br>
+    There it is.<br>
+    That totalizing <br>
+    adjective.<br>
+    I make myself <br>
+    transparent<br>
+    because opacity <br>
+    messes<br>
+    with my mind.<br>
+    Once I put <br>
+    myself into<br>
+    a box called <a id=INTP href="https://www.16personalities.com/intp-personality">INTP.</a><br>
+    Then I realized<br>
+    it was self defeating<br>
+    and reductionist.<br>
+    <a id=collections href="collections.html">
+    I like putting <br>
+    other things into <br>
+    boxes too.<br> </a>
+
+
+  </div>
+
+<div id=squares>
+
+  This is a poem I wrote about squares. I think it is dumb. <br><br>
+
+1. 	Be there or be square. Square is boring. <br><br>
+2.	Squares are rectangles but rectangles are not squares. <br>
+    This is something everyone must know to understand the universe. <br>
+    One thing can be another but the converse is not true.<br>
+    This means that not everything is interchangeable. <br>
+    But really this is arbitrary. Because everything is interchangeable.<br>
+    Nothing is nothing. <br><br>
+3.	Maybe a rectangle can be a square in another dimension. <br>
+    This doesn’t make sense because squares and rectangles only exist<br>
+    in one dimension. <br>
+    Once you add another it becomes a cube. <br>
+    What is the three dimensional form of a rectangle.<br>
+    A rectangular prism.<br>
+    No one says rectangular prism. <br>
+    We like cubes. Ice cubes. Rubik’s cubes. <br><br>
+4. 	My nerdy friends used to see who could solve Rubik’s cubes <br>
+    the fastest.<br>
+    I don’t know what they were trying to prove. <br>
+    What is anyone trying to prove.<br>
+    It is hard to prove something. <br>
+    It has never really been done.<br>
+    It will never be done.<br><br>
+5. 	I like to play <a id=tetriss href="https://tetris.com/play-tetris">Tetris.</a> Tetris is a nerdy game because it is old.<br>
+    Nerds like old things. And new things. <br>
+    What is a nerd.<br>
+    Nerd is a weird word. Weird is a nerd word. <br>
+    Tetris has a lot of squares. I play against myself.<br>
+    I don’t know what I’m trying to prove.<br><br>
+6. 	This writing about squares is not trying to prove anything. <br>
+    It is just a rant about squares. It is very square. <br>
+    I hope you like it. <br>
+    Most people like squares because <br>
+    they are symmetrical and predictable.<br>
+    We like information we can understand.<br><br>
+7. 	Squares we can put into boxes and <br>
+    squares are boxes, are boxed.<br>
+    They are easily understood. Maybe. <br>
+    Maybe this writing is trying to prove otherwise. <br>
+    It is impossible to understand squares and it is impossible to prove<br>
+    that understanding squares is impossible.<br><br>
+8. 	What are we left with. Four lines. Any size but always the same<br>
+    relative to each other. <br>
+    Some space in the middle. What is space. <br>
+    Is it still space if it is not enclosed if it is not boxed in.<br>
+    Even the universe is finite from the outside. <br>
+    Or so I have heard. I’m not a physicist.<br><br>
+9. 	How can something be infinite from the inside and <br>
+    finite from the outside. <br>
+    My brain does not have the necessary boxes to store that idea in.<br>
+    I need to build the boxes first. <br>
+    They will take a lot of work to build and<br>
+    I do not want to put in the effort.<br><br>
+10. I am writing about squares by pressing on squares.<br>
+    Maybe they are not squares they might be<br>
+    a bit too three dimensional. <br>
+    How much is too much. Is there a clear dividing line<br>
+    I guess it would have to be a two dimensional line or<br>
+    maybe dimensional divide would increase proportionally <br>
+    between the dimensions. <br>
+    Are there truly infinite dimensions. <br>
+    Or is there a limit or is this just a limit <br>
+    of human perception.<br>
+    If there is a limit to human perception <br>
+    why do we even try to fathom concepts beyond it <br>
+    if the whole idea is that we cannot. <br>
+    Humans are silly. Ha ha.<br>
+    Why do we study things as though they are ends in themselves. <br>
+    Is a square an end in itself. <br>
+    Is a square a real thing.<br>
+    That is a silly question. Of course it is real. <br>
+    If I say it is real it is real.<br>
+    Why bother separating appearances from the material world<br>
+    because the material world is just appearance anyway.<br><br>
+11. A SQUARE is an appearance. It looks like this <span id=square>__</span> <br>
+    but that is only one of its forms so<br>
+    a square can look very different from that <br>
+    and still be a square so was it even useful showing you that.<br>
+    if you see that and you have never <br>
+    seen or heard of another square would you <br>
+    be able to recognize another square if you saw one.<br>
+    I do not believe so. <br>
+    I wonder a lot about how we gain this knowledge of squares.<br>
+    And lots of other things. <br>
+    Like dogs there are many different breeds of dogs that<br>
+    look very different but if we see a new breed of dog somehow<br>
+    we still know it is a dog how do we know that. <br>
+    I wish I knew more about the human brain and about <br>
+    society and about squares.<br><br>
+12. It is funny that I choose a square as a motif of the universe <br>
+    because square seems like an inorganic form relative to <br>
+    the vast blob of the universe <br>
+    but how can a square be inorganic <br>
+    even if it was created by humans <br>
+    because humans are organic. <br>
+    There is nothing that is inorganic really. <br>
+    Robots are organic because they were created by humans.<br>
+    Gene editing is an organic process because we evolved <br>
+    to this point naturally. <br>
+    We cannot escape what is natural there is nothing unnatural<br>
+    about humans or about squares <br>
+    squares are just as real and true as the universe. <br>
+    Everything is just as real and true as <br>
+    the universe because everything is<br>
+    the universe and the universe <br>
+    is everything and nothing is nothing. <br>
+    That is why <br>
+    a blank square is art and <br>
+    everything is art because <br>
+    art is creative energy <br>
+    is the universe.<br>
+
+
+</div>
+
+<img id=tetris src="tetris.jpg">
+<img id=tetris2 src="tetris.jpg">
+<img id=tetris3 src="tetris.jpg">
+<img id=tetris4 src="tetris.jpg">
+<img id=tetris5 src="tetris.jpg">
+<img id=tetris6 src="tetris.jpg">
+
+<img id=tetris7 src="tetris.jpg">
+<img id=tetris8 src="tetris.jpg">
+<img id=tetris9 src="tetris.jpg">
+<img id=tetris10 src="tetris.jpg">
+<img id=tetris11 src="tetris.jpg">
+<img id=tetris12 src="tetris.jpg">
+<img id=tetris13 src="tetris.jpg">
+<img id=tetris14 src="tetris.jpg">
+<img id=tetris15 src="tetris.jpg">
+<img id=tetris16 src="tetris.jpg">
+<img id=tetris17 src="tetris.jpg">
+<img id=tetris18 src="tetris.jpg">
+<img id=tetris19 src="tetris.jpg">
+<img id=tetris20 src="tetris.jpg">
+<img id=tetris21 src="tetris.jpg">
+<img id=tetris22 src="tetris.jpg">
+<img id=tetris23 src="tetris.jpg">
+<img id=tetris24 src="tetris.jpg">
+<img id=tetris25 src="tetris.jpg">
+<img id=tetris26 src="tetris.jpg">
+<img id=tetris27 src="tetris.jpg">
+<img id=tetris28 src="tetris.jpg">
+
+<img id=inrainbows src="inrain.jpg">
+<img id=HTTT src="HTTT.jpg">
+<img id=amnesiac src="amnesiac.png">
+<img id=darkside src="darkside.png">
+<img id=volta src="volta.jpg">
+<img id=voltaic src="voltaic.jpg">
+<img id=future src="future.jpg">
+<img id=skeletontree src="skeletontree.jpg">
+
+<img id=keyboard src="keyboard.jpg">
+
+</body>
+</html>
